@@ -1,0 +1,265 @@
+html,
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+#site-title {
+    font-size: 24px;
+}
+
+#mobile-nav {
+    display: none;
+    z-index: 1;
+}
+
+.default-padding {
+    padding: 3% 10% 2% 10%;
+}
+
+#loading {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000;
+}
+
+.boomer {
+    transition: all ease-in-out;
+    animation: boomer 2s infinite ease-out;
+}
+
+@keyframes boomer {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+    padding: 15% 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
+.mobile-menu-active {
+    left: 0 !important;
+}
+
+.accordian-toggle {
+    position: absolute;
+    top: -10px;
+    background: none;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    font-size: 36px;
+    font-weight: bolder;
+    z-index: 1;
+    right: 0;
+    transition: all 0.4s ease;
+    transform: rotateZ(0deg);
+}
+
+.accordian-toggle-active {
+    transform: rotateZ(45deg) !important;
+}
+
+#Highlights li h4 {
+    position: relative;
+    z-index: 0;
+}
+
+#Highlights li h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    bottom: -0px;
+    background: linear-gradient(to right, var(--primary-1), 70%, var(--dark-2));
+}
+
+.accordian {
+    display: block;
+    height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.accordian-visible {
+    animation: accordian 1s ease;
+    overflow: visible;
+    margin-top: 10px;
+    height: 50px !important;
+}
+
+.fadeIn {
+    position: relative;
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+.fadeUp {
+    position: relative;
+    transition: 0.3s all linear;
+    opacity: 0;
+    bottom: -200px;
+}
+
+.carousal-card {
+    position: relative;
+    height: 250px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.carousal-card img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+}
+
+.carousal-card .container {
+    position: relative;
+    top: 50%;
+    text-shadow: -1px -1px 40px #000, 0 0 10px #fff;
+    padding: 10px;
+}
+
+.come-in-l {
+    position: relative;
+    animation: come-in-l 1s ease-in-out;
+}
+
+.come-in-r {
+    position: relative;
+    ;
+    animation: come-in-r 1s ease-in-out;
+}
+
+.come-up {
+    position: relative;
+    animation: come-up 1s ease-in-out;
+}
+
+.fade-up {
+    position: relative;
+    animation: fade-up 1s ease-in-out;
+}
+
+#hook-image {
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+#About,
+#Products {
+    position: relative;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+@keyframes come-in-l {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes come-in-r {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes come-up {
+    0% {
+        top: 200px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        top: 15%;
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.footer-outro {
+    border-right: 5px solid var(--primary-1);
+    padding-right: 20px;
+}
+
+.testimoniol-container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5% 2%;
+    border-top: 3px solid var(--primary-4);
+    border-bottom: 3px solid var(--primary-4);
+}
+
+.item-container {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.testimoniol-item {
+    white-space: normal;
+    display: inline-block;
+    width: 90%;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.testimoniol-arrow-left {
+    position: absolute;
+    text-align: center;
+    left: -10%;
+    top: 50%;
+    font-size: 30px;
+    padding: 10px;
+    background: var(--dark-2);
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.testimoniol-arrow-right {
+    position: absolute;
+    text-align: center;
+    right: -10%;
+    top: 50%;
+    font-size: 30px;
+    padding: 10px;
+    background: var(--dark-2);
+    border-radius: 5px;
+    z-index: 99;
+}

@@ -1,0 +1,80 @@
+@media only screen and (max-width: 450px) {
+    .right-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+    .stack {
+        flex-direction: column !important;
+    }
+    .reverse-stack {
+        flex-direction: column-reverse !important;
+    }
+    .mw-100 {
+        width: 100% !important;
+    }
+    #About .my-5 {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .carousal-card {
+        width: 150px;
+        height: 150px;
+    }
+    .carousal-card h3 {
+        font-size: 14px;
+        text-shadow: 0 0 10px #000;
+    }
+    .carousal-card .round-btn {
+        font-size: 12px;
+        padding: 0.4rem 0.7rem;
+    }
+    .footer-outro {
+        border: none;
+        border-bottom: 3px solid var(--primary-1);
+        padding: 0;
+        padding-bottom: 10px;
+        margin-right: 10px;
+    }
+    #credits h5 {
+        font-size: 14px;
+    }
+    #credits h5 {
+        font-size: 14px;
+    }
+    #about-about {
+        position: relative;
+        z-index: 1;
+        height: 350px;
+        overflow: hidden;
+        padding: 10%;
+    }
+    #about-about .image-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .testimoniol-container {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        padding: 5% 2%;
+        border-top: 3px solid var(--primary-4);
+        border-bottom: 3px solid var(--primary-4);
+    }
+    .testimoniol-item h3 {
+        font-size: 18px;
+    }
+    .testimoniol-item p {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .testimoniol-arrow-right {
+        font-size: 18px;
+    }
+    .testimoniol-arrow-left {
+        font-size: 18px;
+    }
+}
